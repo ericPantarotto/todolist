@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>To Do List</title>
+    <link rel="icon" type="image/x-icon" href="./images/dom-js.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <header>
+    <ul>
+      <li>
+        <a href="/">Today</a>
+      </li>
+      <% lists.forEach(item => { %>
+      <li>
+        <a href="/<%= item.name %>"><%= item.name %></a>
+      </li>
+      <% }); %>
+    </ul>
+  </header>
+  <body></body>
+</html>
